@@ -1,7 +1,20 @@
+@import './components';
+@import './medium';
+@import './xlarge';
+
 *,
 *::before,
 *::after {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+}
+
+:root {
+	--color-extralight: #ffffff;
+	--color-light: #aaaaaa;
+	--color-extramedium: #666666;
+	--color-medium: #4c4c4c;
+	--color-extradark: #333333;
+	--color-dark: #111111;
 }
