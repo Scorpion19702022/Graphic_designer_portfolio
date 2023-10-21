@@ -1,3 +1,8 @@
+.section {
+  height: 100vh;
+  padding: 6em 3em 4em 3em;
+}
+
 *,
 *::before,
 *::after {
@@ -28,7 +33,7 @@ body {
 
 .burger-btn {
   position: fixed;
-  top: 20px;
+  top: 10px;
   right: 20px;
   padding: 1em;
   background: none;
@@ -71,4 +76,79 @@ body {
   width: 30%;
   -webkit-transition-delay: 0.08s;
           transition-delay: 0.08s;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-color: var(--color-extradark);
+}
+.header__heading {
+  font-size: 1.6em;
+  color: var(--color-light);
+  margin-bottom: 0.6em;
+}
+.header__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.header__text--text {
+  font-size: 1em;
+  color: var(--color-extralight);
+}
+.header__boxskills {
+  margin-top: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.header__skills--heading {
+  font-size: 1.2em;
+  color: var(--color-light);
+}
+.header__skillsimage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1em 0em;
+}
+.header__img {
+  width: 40px;
+  height: 40px;
+  margin: 0em 1em;
 }/*# sourceMappingURL=style.css.map */
