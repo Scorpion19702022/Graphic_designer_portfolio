@@ -1,7 +1,5 @@
 @import './components';
 @import './mixins';
-@import './medium';
-@import './xlarge';
 
 *,
 *::before,
@@ -18,6 +16,7 @@
 	--color-medium: #4c4c4c;
 	--color-extradark: #333333;
 	--color-dark: #111111;
+	--color-blenda: rgba(51, 51, 51, 0.3);
 }
 
 html {
@@ -84,7 +83,7 @@ body {
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
-	background-color: var(--color-extradark);
+	background-color: var(--color-dark);
 	&__heading {
 		font-size: 1.6em;
 		color: var(--color-light);
@@ -127,3 +126,9 @@ body {
 		margin: 0em 1em;
 	}
 }
+
+// ==============================================
+
+@import './medium';
+@import './xlarge';
+@import './xxlarge.scss';

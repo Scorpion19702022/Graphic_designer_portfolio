@@ -19,6 +19,7 @@
   --color-medium: #4c4c4c;
   --color-extradark: #333333;
   --color-dark: #111111;
+  --color-blenda: rgba(51, 51, 51, 0.3);
 }
 
 html {
@@ -60,7 +61,7 @@ body {
   content: "";
   right: 0;
   height: 3px;
-  background-color: red;
+  background-color: #ffffff;
   -webkit-transition: width 0.3s ease-in-out;
   transition: width 0.3s ease-in-out;
 }
@@ -90,7 +91,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  background-color: var(--color-extradark);
+  background-color: var(--color-dark);
 }
 .header__heading {
   font-size: 1.6em;
@@ -151,4 +152,36 @@ body {
   width: 40px;
   height: 40px;
   margin: 0em 1em;
+}
+
+@media (min-width: 768px) {
+  .header {
+    background-image: url("../img/myface.png");
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: 480px -250px;
+  }
+  .header__heading {
+    font-size: 2.4em;
+  }
+  .header__img {
+    width: 75px;
+    height: 75px;
+  }
+}
+@media (min-width: 1200px) {
+  .header {
+    background-image: url("../img/myface.png");
+    background-size: 85%;
+    background-repeat: no-repeat;
+    background-position: 550px -200px;
+  }
+}
+@media (min-width: 1400px) {
+  .header {
+    background-image: url("../img/myface.png");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: 200px, -1000px;
+  }
 }/*# sourceMappingURL=style.css.map */
