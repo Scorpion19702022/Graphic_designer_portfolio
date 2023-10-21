@@ -211,6 +211,11 @@ body {
     text-align: left;
     margin-right: 5em;
   }
+  .header__boxskills {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
 }
 @media (min-width: 1400px) {
   .header {
