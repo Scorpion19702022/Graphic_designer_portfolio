@@ -2,6 +2,7 @@
   height: 100vh;
   padding: 4.5em 3em 4em 3em;
   overflow: hidden;
+  background-color: var(--color-dark);
 }
 
 *,
@@ -55,6 +56,10 @@ body {
   background-color: var(--color-dark);
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 }
 .nav .navbar__links {
   height: 70vh;
@@ -75,6 +80,12 @@ body {
 .nav .navbar__link--page {
   position: relative;
   text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: var(--color-light);
   font-size: 1.4em;
   padding-bottom: 0.4em;

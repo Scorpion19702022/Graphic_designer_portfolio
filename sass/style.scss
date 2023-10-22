@@ -42,6 +42,7 @@ body {
 		justify-content: center;
 		background-color: var(--color-dark);
 		transform: translateX(100%);
+		transition: transform 0.5s ease-in-out;
 		&__links {
 			height: 70vh;
 			display: flex;
@@ -53,6 +54,8 @@ body {
 			&--page {
 				position: relative;
 				text-decoration: none;
+				display: flex;
+				justify-content: center;
 				color: var(--color-light);
 				font-size: 1.4em;
 				padding-bottom: 0.4em;
