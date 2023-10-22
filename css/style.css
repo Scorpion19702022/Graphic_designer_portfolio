@@ -172,7 +172,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  background-color: var(--color-dark);
 }
 .header__heading {
   font-size: 1.4em;
