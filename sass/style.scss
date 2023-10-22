@@ -29,51 +29,100 @@ body {
 	font-size: 1.6rem;
 }
 
-.burger-btn {
-	position: fixed;
-	top: 10px;
-	right: 20px;
-	padding: 1em;
-	background: none;
-	border: 1px solid transparent;
-	cursor: pointer;
-	z-index: 100;
-
-	&:focus {
-		outline: none;
-		border: 1px solid var(--color-light);
-		border-radius: 8px;
+.nav {
+	.navbar {
+		width: 100vw;
+		height: 100vh;
+		position: fixed;
+		top: 0;
+		left: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		background-color: var(--color-dark);
+		transform: translateX(100%);
+		&__links {
+			height: 70vh;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+		&__link {
+			list-style: none;
+			&--page {
+				position: relative;
+				text-decoration: none;
+				color: var(--color-light);
+				font-size: 1.4em;
+				padding-bottom: 0.4em;
+				&::before {
+					position: absolute;
+					content: '';
+					width: 0vw;
+					bottom: 0;
+					border-bottom: 0.04em solid var(--color-extramedium);
+					transition: all 0.3s ease-in-out;
+				}
+				&:hover::before {
+					width: 25vw;
+				}
+				&:hover {
+					color: var(--color-extramedium);
+				}
+			}
+		}
+	}
+	.navbarview {
+		transform: translateX(0%);
 	}
 
-	&:hover {
-		.burger-btn__bars::after,
-		.burger-btn__bars::before {
+	.burger-btn {
+		position: fixed;
+		top: 10px;
+		right: 20px;
+		padding: 1em;
+		background: none;
+		border: 1px solid transparent;
+		cursor: pointer;
+		z-index: 100;
+
+		&:focus {
+			outline: none;
+			border: 1px solid var(--color-light);
+			border-radius: 8px;
+		}
+
+		&:hover {
+			.burger-btn__bars::after,
+			.burger-btn__bars::before {
+				width: 100%;
+			}
+		}
+
+		&__box {
+			position: relative;
+			width: 40px;
+			height: 30px;
+		}
+
+		&__bars,
+		&__bars::after,
+		&__bars::before {
+			@include burgerBtn;
+		}
+
+		&__bars {
 			width: 100%;
-		}
-	}
-
-	&__box {
-		position: relative;
-		width: 40px;
-		height: 30px;
-	}
-
-	&__bars,
-	&__bars::after,
-	&__bars::before {
-		@include burgerBtn;
-	}
-
-	&__bars {
-		width: 100%;
-		&::after {
-			top: 13px;
-			width: 60%;
-		}
-		&::before {
-			top: 27px;
-			width: 30%;
-			transition-delay: 0.08s;
+			&::after {
+				top: 13px;
+				width: 60%;
+			}
+			&::before {
+				top: 27px;
+				width: 30%;
+				transition-delay: 0.08s;
+			}
 		}
 	}
 }

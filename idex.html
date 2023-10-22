@@ -21,16 +21,42 @@
 
 <body>
 
-    <button class="burger-btn">
-        <div class="burger-btn__box">
-            <div class="burger-btn__bars"></div>
+    <nav class="nav">
+        <div class="navbar navbarview">
+            <ul class="navbar__links">
+                <li class="navbar__link">
+                    <a href="#Home" class="navbar__link--page">Home</a>
+                </li>
+                <li class="navbar__link">
+                    <a href="#Front" class="navbar__link--page">Okładki</a>
+                </li>
+                <li class="navbar__link">
+                    <a href="#PagesTV" class="navbar__link--page">Strony TV</a>
+                </li>
+                <li class="navbar__link">
+                    <a href="#Moto" class="navbar__link--page">Projekt Moto</a>
+                </li>
+                <li class="navbar__link">
+                    <a href="#Commerce" class="navbar__link--page">Komercyjne</a>
+                </li>
+                <li class="navbar__link">
+                    <a href="#WWW" class="navbar__link--page">www</a>
+                </li>
+                <li class="navbar__link">
+                    <a href="#Contact" class="navbar__link--page">Kontakt</a>
+                </li>
+            </ul>
         </div>
-    </button>
 
-    <nav class="nav"></nav>
+        <button class="burger-btn">
+            <div class="burger-btn__box">
+                <div class="burger-btn__bars"></div>
+            </div>
+        </button>
+    </nav>
 
-    <header class="header section">
-        <h1 class="header__heading">Portfolio grafika i Front-end developera</h1>
+    <header class="header section" id="Home">
+        <h1 class="header__heading">Portfolio grafika i Front-end Developera</h1>
         <div class="header__box">
             <div class="header__text">
                 <p class="header__text--text">Od wielu lat zajmuję się tworzeniem layout'ów, realizacją projektów
@@ -70,7 +96,10 @@
         </div>
     </header>
 
-
+    <main>
+        <section class="section" id="Front"></section>
+        <section class="section" id="PagesTV"></section>
+    </main>
 
     <script src="./js/script.js"></script>
 </body>

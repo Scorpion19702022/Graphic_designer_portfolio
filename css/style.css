@@ -33,7 +33,72 @@ body {
   font-size: 1.6rem;
 }
 
-.burger-btn {
+.nav .navbar {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: var(--color-dark);
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+.nav .navbar__links {
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.nav .navbar__link {
+  list-style: none;
+}
+.nav .navbar__link--page {
+  position: relative;
+  text-decoration: none;
+  color: var(--color-light);
+  font-size: 1.4em;
+  padding-bottom: 0.4em;
+}
+.nav .navbar__link--page::before {
+  position: absolute;
+  content: "";
+  width: 0vw;
+  bottom: 0;
+  border-bottom: 0.04em solid var(--color-extramedium);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.nav .navbar__link--page:hover::before {
+  width: 25vw;
+}
+.nav .navbar__link--page:hover {
+  color: var(--color-extramedium);
+}
+.nav .navbarview {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+.nav .burger-btn {
   position: fixed;
   top: 10px;
   right: 20px;
@@ -43,21 +108,21 @@ body {
   cursor: pointer;
   z-index: 100;
 }
-.burger-btn:focus {
+.nav .burger-btn:focus {
   outline: none;
   border: 1px solid var(--color-light);
   border-radius: 8px;
 }
-.burger-btn:hover .burger-btn__bars::after,
-.burger-btn:hover .burger-btn__bars::before {
+.nav .burger-btn:hover .burger-btn__bars::after,
+.nav .burger-btn:hover .burger-btn__bars::before {
   width: 100%;
 }
-.burger-btn__box {
+.nav .burger-btn__box {
   position: relative;
   width: 40px;
   height: 30px;
 }
-.burger-btn__bars, .burger-btn__bars::after, .burger-btn__bars::before {
+.nav .burger-btn__bars, .nav .burger-btn__bars::after, .nav .burger-btn__bars::before {
   position: absolute;
   content: "";
   right: 0;
@@ -66,14 +131,14 @@ body {
   -webkit-transition: width 0.3s ease-in-out;
   transition: width 0.3s ease-in-out;
 }
-.burger-btn__bars {
+.nav .burger-btn__bars {
   width: 100%;
 }
-.burger-btn__bars::after {
+.nav .burger-btn__bars::after {
   top: 13px;
   width: 60%;
 }
-.burger-btn__bars::before {
+.nav .burger-btn__bars::before {
   top: 27px;
   width: 30%;
   -webkit-transition-delay: 0.08s;
