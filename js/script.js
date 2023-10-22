@@ -5,10 +5,6 @@ const links = document.querySelectorAll('.navbar__link')
 const icons = document.querySelectorAll('.header__skillsimage')
 const body = document.querySelector('body')
 
-console.log(btn)
-console.log(navbar)
-console.log(links)
-
 body.onload = () => {
 	loadIcons()
 }

@@ -3,6 +3,17 @@
   padding: 4.5em 3em 4em 3em;
   overflow: hidden;
   background-color: var(--color-dark);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
 }
 
 *,
@@ -241,6 +252,28 @@ body {
   width: 40px;
   height: 40px;
   margin: 0em 1em;
+}
+
+.pages__heading {
+  font-size: 1.4em;
+  color: var(--color-light);
+  margin-bottom: 0.6em;
+}
+.pages__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.pages__text--text {
+  font-size: 0.92em;
+  color: var(--color-extralight);
 }
 
 @media (min-width: 768px) {
