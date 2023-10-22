@@ -1,9 +1,8 @@
 @media (min-width: 1200px) {
 	.header {
-		background-image: url('../img/myface.png');
 		background-size: 70%;
 		background-repeat: no-repeat;
-		background-position: 650px -300px;
+		background-position: 750px -300px;
 		&__heading {
 			margin-bottom: 3em;
 			padding-bottom: 0.4em;
@@ -14,9 +13,12 @@
 			flex-direction: row;
 		}
 		&__text {
-			width: 30vw;
+			width: 32vw;
 			text-align: left;
-			margin-right: 5em;
+			margin: 0em 5em 1em 0em;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end;
 		}
 		&__boxskills {
 			justify-content: flex-end;

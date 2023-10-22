@@ -1,6 +1,6 @@
 .section {
   height: 100vh;
-  padding: 6em 3em 4em 3em;
+  padding: 4.5em 3em 4em 3em;
   overflow: hidden;
 }
 
@@ -95,7 +95,7 @@ body {
   background-color: var(--color-dark);
 }
 .header__heading {
-  font-size: 1.6em;
+  font-size: 1.4em;
   color: var(--color-light);
   margin-bottom: 0.6em;
 }
@@ -112,7 +112,7 @@ body {
       justify-content: space-around;
 }
 .header__text--text {
-  font-size: 1em;
+  font-size: 0.92em;
   color: var(--color-extralight);
 }
 .header__boxskills {
@@ -140,6 +140,14 @@ body {
 .header__skills--heading {
   font-size: 1.2em;
   color: var(--color-light);
+  margin-bottom: 0.4em;
+}
+.header__skills--text {
+  font-size: 0.92em;
+  color: var(--color-extralight);
+}
+.header__skills span {
+  font-weight: bold;
 }
 .header__skillsimage {
   display: -webkit-box;
@@ -187,10 +195,9 @@ body {
 }
 @media (min-width: 1200px) {
   .header {
-    background-image: url("../img/myface.png");
     background-size: 70%;
     background-repeat: no-repeat;
-    background-position: 650px -300px;
+    background-position: 750px -300px;
   }
   .header__heading {
     margin-bottom: 3em;
@@ -207,9 +214,19 @@ body {
             flex-direction: row;
   }
   .header__text {
-    width: 30vw;
+    width: 32vw;
     text-align: left;
-    margin-right: 5em;
+    margin: 0em 5em 1em 0em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
   .header__boxskills {
     -webkit-box-pack: end;
@@ -219,9 +236,11 @@ body {
 }
 @media (min-width: 1400px) {
   .header {
-    background-image: url("../img/myface.png");
-    background-size: 50%;
+    background-size: 60%;
     background-repeat: no-repeat;
-    background-position: 200px, -1000px;
+    background-position: 1000px, -150px;
+  }
+  .header__heading {
+    font-size: 3.6em;
   }
 }/*# sourceMappingURL=style.css.map */

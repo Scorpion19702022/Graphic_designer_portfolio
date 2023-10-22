@@ -10,7 +10,7 @@ const loadIcons = () => {
 		icons.forEach(e => {
 			e.classList.remove('header__actionicons')
 		})
-	}, 1000)
+	}, 800)
 }
 
 // const loadIcons = () => {

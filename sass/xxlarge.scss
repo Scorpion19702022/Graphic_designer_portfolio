@@ -1,8 +1,10 @@
 @media (min-width: 1400px) {
 	.header {
-		background-image: url('../img/myface.png');
-		background-size: 50%;
+		background-size: 60%;
 		background-repeat: no-repeat;
-		background-position: 200px, -1000px;
+		background-position: 1100px, -150px;
+		&__heading {
+			font-size: 3.6em;
+		}
 	}
 }

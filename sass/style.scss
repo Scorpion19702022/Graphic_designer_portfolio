@@ -85,7 +85,7 @@ body {
 	text-align: center;
 	background-color: var(--color-dark);
 	&__heading {
-		font-size: 1.6em;
+		font-size: 1.4em;
 		color: var(--color-light);
 		margin-bottom: 0.6em;
 	}
@@ -97,7 +97,7 @@ body {
 	}
 	&__text {
 		&--text {
-			font-size: 1em;
+			font-size: 0.92em;
 			color: var(--color-extralight);
 		}
 	}
@@ -113,6 +113,14 @@ body {
 		&--heading {
 			font-size: 1.2em;
 			color: var(--color-light);
+			margin-bottom: 0.4em;
+		}
+		&--text {
+			font-size: 0.92em;
+			color: var(--color-extralight);
+		}
+		span {
+			font-weight: bold;
 		}
 	}
 	&__skillsimage {
@@ -132,4 +140,4 @@ body {
 
 @import './medium';
 @import './xlarge';
-@import './xxlarge.scss';
+@import './xxlarge';
