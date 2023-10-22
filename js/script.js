@@ -23,6 +23,7 @@ const loadIcons = () => {
 
 const handleBtn = () => {
 	navbar.classList.toggle('navbarview')
+	document.body.classList.toggle('stickibody')
 	links.forEach(link => {
 		link.addEventListener('click', () => {
 			navbar.classList.remove('navbarview')
