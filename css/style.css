@@ -381,6 +381,14 @@ body {
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
+  .pages__heading {
+    margin-bottom: 1.6em;
+    padding-bottom: 0.4em;
+    border-bottom: 0.04em solid var(--color-light);
+  }
+  .pages__swiper {
+    width: 80vw;
+  }
 }
 @media (min-width: 1400px) {
   .header {

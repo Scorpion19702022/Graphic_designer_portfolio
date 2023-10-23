@@ -29,7 +29,7 @@ const handleBtn = () => {
 
 const swiper = new Swiper('.mySwiperOne', {
 	slidesPerView: 1,
-	spaceBetween: 30,
+	spaceBetween: 20,
 	loop: true,
 	autoplay: {
 		delay: 3200,
@@ -49,7 +49,7 @@ const swiper = new Swiper('.mySwiperOne', {
 			spaceBetween: 40,
 		},
 		1200: {
-			slidesPerView: 3,
+			slidesPerView: 2,
 			spaceBetween: 50,
 		},
 		1400: {

@@ -24,4 +24,14 @@
 			justify-content: flex-end;
 		}
 	}
+	.pages {
+		&__heading {
+			margin-bottom: 1.6em;
+			padding-bottom: 0.4em;
+			border-bottom: 0.04em solid var(--color-light);
+		}
+		&__swiper {
+			width: 80vw;
+		}
+	}
 }
