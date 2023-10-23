@@ -299,6 +299,9 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.pages__icons {
+  color: var(--color-light);
+}
 
 @media (min-width: 768px) {
   .header {
@@ -327,6 +330,15 @@ body {
   .header__actionicons {
     -webkit-transform: translateX(300%);
             transform: translateX(300%);
+  }
+  .pages__heading {
+    font-size: 2.4em;
+  }
+  .pages__text--text {
+    font-size: 1.6em;
+  }
+  .pages__swiper {
+    width: 60vw;
   }
 }
 @media (min-width: 1200px) {
