@@ -34,6 +34,7 @@ body {
 }
 
 .nav {
+	z-index: 100;
 	.navbar {
 		width: 100vw;
 		height: 100vh;
@@ -211,8 +212,20 @@ body {
 		}
 	}
 	&__swiper {
-		width: 50vw;
-		height: 50vh;
+		width: 90vw;
+		height: 40vh;
+	}
+	&__wrapper {
+		display: flex;
+	}
+	&__side {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		&--img {
+			height: 40vh;
+			object-fit: cover;
+		}
 	}
 }
 
