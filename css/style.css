@@ -14,7 +14,6 @@
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  z-index: -100;
 }
 
 *,
@@ -50,10 +49,8 @@ body {
   overflow: hidden;
 }
 
-.nav {
-  z-index: 100;
-}
 .nav .navbar {
+  z-index: 100;
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -280,8 +277,9 @@ body {
   color: var(--color-extralight);
 }
 .pages__swiper {
+  margin-top: 2em;
   width: 90vw;
-  height: 40vh;
+  height: 45vh;
 }
 .pages__wrapper {
   display: -webkit-box;
@@ -295,9 +293,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 .pages__side--img {
   height: 40vh;
