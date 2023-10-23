@@ -7,4 +7,18 @@
 			font-size: 3.6em;
 		}
 	}
+
+	.pages {
+		&__box {
+			display: flex;
+			flex-direction: row;
+		}
+		&__text {
+			width: 40vw;
+		}
+		&__swiper {
+			width: 20vw;
+			height: 75vh;
+		}
+	}
 }

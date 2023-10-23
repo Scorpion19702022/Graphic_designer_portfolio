@@ -7,4 +7,20 @@
   .header__heading {
     font-size: 3.6em;
   }
+  .pages__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .pages__text {
+    width: 40vw;
+  }
+  .pages__swiper {
+    width: 20vw;
+    height: 75vh;
+  }
 }/*# sourceMappingURL=xxlarge.css.map */

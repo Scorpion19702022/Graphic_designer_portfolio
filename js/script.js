@@ -53,7 +53,7 @@ const swiper = new Swiper('.mySwiperOne', {
 			spaceBetween: 50,
 		},
 		1400: {
-			slidesPerView: 4,
+			slidesPerView: 1,
 			spaceBetween: 50,
 		},
 	},
