@@ -27,7 +27,7 @@ const handleBtn = () => {
 	})
 }
 
-const swiper = new Swiper('.mySwiperOne', {
+const swiper = new Swiper('.mySwiperOne, .mySwiperTwo', {
 	slidesPerView: 1,
 	spaceBetween: 20,
 	loop: true,
