@@ -32,7 +32,7 @@ const swiper = new Swiper('.mySwiperOne, .mySwiperTwo', {
 	spaceBetween: 20,
 	loop: true,
 	autoplay: {
-		delay: 3200,
+		delay: 4000,
 		disableOnInteraction: false,
 	},
 	pagination: {
