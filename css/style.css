@@ -349,6 +349,9 @@ body {
   width: 90vw;
   height: 45vh;
 }
+.pages__swiper .swiper-pagination {
+  color: var(--color-extramedium);
+}
 .pages__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
