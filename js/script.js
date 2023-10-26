@@ -7,8 +7,6 @@ const body = document.querySelector('body')
 
 const viewImg = document.querySelectorAll('.all-img')
 
-console.log(viewImg)
-
 body.onload = () => {
 	loadIcons()
 }
