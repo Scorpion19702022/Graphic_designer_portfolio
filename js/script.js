@@ -5,6 +5,10 @@ const links = document.querySelectorAll('.navbar__link')
 const icons = document.querySelectorAll('.header__skillsimage')
 const body = document.querySelector('body')
 
+const viewImg = document.querySelectorAll('.all-img')
+
+console.log(viewImg)
+
 body.onload = () => {
 	loadIcons()
 }
@@ -26,6 +30,16 @@ const handleBtn = () => {
 		})
 	})
 }
+
+const handleClickImage = () => {
+	viewImg.forEach(e => {
+		e.addEventListener('click', () => {
+			e.classList.toggle('action')
+		})
+	})
+}
+
+handleClickImage()
 
 const swiper = new Swiper('.mySwiperOne, .mySwiperTwo, .mySwiperThree, .mySwiperFour', {
 	slidesPerView: 1,

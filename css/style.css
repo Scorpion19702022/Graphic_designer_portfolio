@@ -404,12 +404,15 @@ body {
 .pages .action {
   position: absolute;
   width: 80%;
-  height: 30%;
+  height: 28%;
   -o-object-fit: cover;
      object-fit: cover;
   top: 50vh;
   left: 10vw;
   cursor: pointer;
+}
+.pages .viewimg {
+  opacity: 0;
 }
 
 @media (min-width: 768px) {

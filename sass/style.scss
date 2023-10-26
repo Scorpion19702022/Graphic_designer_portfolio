@@ -268,11 +268,14 @@ body {
 	.action {
 		position: absolute;
 		width: 80%;
-		height: 30%;
+		height: 28%;
 		object-fit: cover;
 		top: 50vh;
 		left: 10vw;
 		cursor: pointer;
+	}
+	.viewimg {
+		opacity: 0;
 	}
 }
 
