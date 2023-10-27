@@ -399,12 +399,12 @@ body {
 }
 .pages .action {
   position: absolute;
-  width: 80%;
-  height: 28%;
+  width: 85vw;
+  height: 26vh;
   -o-object-fit: cover;
      object-fit: cover;
   top: 50vh;
-  left: 10vw;
+  left: 7vw;
   cursor: pointer;
 }
 
@@ -444,6 +444,10 @@ body {
   }
   .pages__swiper {
     width: 60vw;
+  }
+  .pages .action {
+    height: 47vh;
+    top: 40vh;
   }
 }
 @media (min-width: 1200px) {
