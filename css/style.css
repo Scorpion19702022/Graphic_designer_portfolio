@@ -1,5 +1,4 @@
 .section {
-  position: relative;
   height: 100vh;
   padding: 4.5em 3em 4em 3em;
   overflow: hidden;
@@ -445,7 +444,7 @@ body {
   .pages__swiper {
     width: 60vw;
   }
-  .pages .action {
+  .pages .action2 {
     height: 47vh;
     top: 40vh;
   }

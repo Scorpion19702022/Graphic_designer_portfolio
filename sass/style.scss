@@ -218,12 +218,10 @@ body {
 	}
 	&__wrapper {
 		display: flex;
-		// justify-content: center;
 	}
 	&__side {
 		display: flex;
 		justify-content: center;
-		// align-items: center;
 		&--img {
 			height: 40vh;
 			object-fit: cover;

@@ -5,7 +5,7 @@ const links = document.querySelectorAll('.navbar__link')
 const icons = document.querySelectorAll('.header__skillsimage')
 const body = document.querySelector('body')
 
-const viewImg = document.querySelectorAll('.all-img')
+const highImg = document.querySelectorAll('.all-img')
 
 body.onload = () => {
 	loadIcons()
@@ -29,12 +29,12 @@ const handleBtn = () => {
 }
 
 const handleClickImage = () => {
-	viewImg.forEach((e, index) => {
+	highImg.forEach((e, index) => {
 		e.addEventListener('click', () => {
 			if (e.classList.contains('action')) {
 				e.classList.remove('action')
 			} else {
-				viewImg.forEach((img, i) => {
+				highImg.forEach((img, i) => {
 					if (i !== index && img.classList.contains('action')) {
 						img.classList.remove('action')
 					}
