@@ -30,9 +30,18 @@ const handleBtn = () => {
 }
 
 const handleClickImage = () => {
-	viewImg.forEach(e => {
+	viewImg.forEach((e, index) => {
 		e.addEventListener('click', () => {
-			e.classList.toggle('action')
+			if (e.classList.contains('action')) {
+				e.classList.remove('action')
+			} else {
+				viewImg.forEach((img, i) => {
+					if (i !== index && img.classList.contains('action')) {
+						img.classList.remove('action')
+					}
+				})
+				e.classList.add('action')
+			}
 		})
 	})
 }
