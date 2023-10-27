@@ -326,6 +326,7 @@ body {
   z-index: 10;
 }
 .pages__box {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
