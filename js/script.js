@@ -7,6 +7,11 @@ const body = document.querySelector('body')
 
 const highImg = document.querySelectorAll('.all-img')
 
+const highSlider = document.querySelectorAll('.pages__side--img')
+const swipers = document.querySelectorAll('pages__swiper')
+
+console.log(swipers)
+
 body.onload = () => {
 	loadIcons()
 }
@@ -27,6 +32,23 @@ const handleBtn = () => {
 		})
 	})
 }
+
+const handleClickSlider = () => {
+	highSlider.forEach(e => {
+		e.addEventListener('click', () => {
+			e.classList.toggle('highslider')
+			if (e.classList.contains('highslider')) {
+				swipers.forEach(e => {
+					e.classList.remove('mySwiperOne')
+				})
+			} else {
+				e.classList.add('mySwiperOne')
+			}
+		})
+	})
+}
+
+handleClickSlider()
 
 const handleClickImage = () => {
 	highImg.forEach((e, index) => {
