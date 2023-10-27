@@ -368,7 +368,7 @@ body {
 .pages__icons {
   color: var(--color-light);
 }
-.pages__others {
+.pages__dtp {
   height: 60vh;
   margin-top: 2em;
   display: grid;
@@ -556,7 +556,7 @@ body {
   .pages__side--img {
     height: 55vh;
   }
-  .pages__others {
+  .pages__dtp {
     width: 50vw;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
