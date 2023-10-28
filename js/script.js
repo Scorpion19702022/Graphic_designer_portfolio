@@ -7,8 +7,12 @@ const body = document.querySelector('body')
 
 const highImg = document.querySelectorAll('.all-img')
 
-const bigSwipers = document.querySelectorAll('.pages__side--img')
-const bigImgSwiper = document.querySelectorAll('.pages__swiper')
+// const bigImgSwiper = document.querySelectorAll('.pages__swiper')
+// const bigSwipers = document.querySelectorAll('.pages__side--img')
+
+const bigSwipers = document.querySelectorAll('.pages__swiper')
+const bigImgSwiper = document.querySelectorAll('.pages__side--img')
+const viewIcon = document.querySelectorAll('.pages__icons')
 
 console.log(bigImgSwiper)
 
@@ -41,9 +45,15 @@ const handleClickSlider = () => {
 				bigImgSwiper.forEach(img => {
 					img.classList.add('imgBig')
 				})
+				viewIcon.forEach(icon => {
+					icon.classList.add('viewicon')
+				})
 			} else {
 				bigImgSwiper.forEach(img => {
 					img.classList.remove('imgBig')
+				})
+				viewIcon.forEach(icon => {
+					icon.classList.remove('viewicon')
 				})
 			}
 		})
@@ -73,7 +83,7 @@ handleClickImage()
 
 const swiper = new Swiper('.mySwiperOne, .mySwiperTwo, .mySwiperThree, .mySwiperFour', {
 	slidesPerView: 1,
-	spaceBetween: 20,
+	spaceBetween: 40,
 	loop: true,
 	autoplay: {
 		delay: 4000,
