@@ -10,6 +10,7 @@ const highImg = document.querySelectorAll('.all-img')
 // const bigImgSwiper = document.querySelectorAll('.pages__swiper')
 // const bigSwipers = document.querySelectorAll('.pages__side--img')
 
+const viewText = document.querySelectorAll('.pages__text')
 const bigSwipers = document.querySelectorAll('.pages__swiper')
 const bigImgSwiper = document.querySelectorAll('.pages__side--img')
 const viewIcon = document.querySelectorAll('.pages__icons')
@@ -46,12 +47,18 @@ const handleClickSlider = () => {
 				viewIcon.forEach(icon => {
 					icon.classList.add('viewicon')
 				})
+				viewText.forEach(text => {
+					text.classList.add('viewicon')
+				})
 			} else {
 				bigImgSwiper.forEach(img => {
 					img.classList.remove('imgBig')
 				})
 				viewIcon.forEach(icon => {
 					icon.classList.remove('viewicon')
+				})
+				viewText.forEach(text => {
+					text.classList.remove('viewicon')
 				})
 			}
 		})

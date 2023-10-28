@@ -426,7 +426,7 @@ body {
   height: 58vh;
   cursor: pointer;
 }
-.pages s .viewicon {
+.pages .viewicon {
   display: none;
 }
 
@@ -470,6 +470,22 @@ body {
   .pages .action {
     height: 50vh;
     top: 40vh;
+  }
+  .pages .highslider {
+    position: absolute;
+    width: 95vw;
+    height: 100vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+    top: 37vh;
+    bottom: 37vh;
+    left: 2vw;
+    right: 2vw;
+  }
+  .pages .imgBig {
+    width: 65vh;
+    height: 78vh;
+    cursor: pointer;
   }
 }
 @media (min-width: 1200px) {
