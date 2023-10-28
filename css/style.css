@@ -409,12 +409,13 @@ body {
 }
 .pages .highslider {
   position: absolute;
-  width: 80vw;
-  height: 95vh;
+  width: 85vw;
+  height: 100vh;
   -o-object-fit: cover;
      object-fit: cover;
   top: 50vh;
-  left: 10vw;
+  left: 5vw;
+  right: 5vw;
   -webkit-transform: translateY(-25%);
           transform: translateY(-25%);
   z-index: 1000;
@@ -422,10 +423,10 @@ body {
 }
 .pages .imgBig {
   width: 65vh;
-  height: 55vh;
+  height: 58vh;
   cursor: pointer;
 }
-.pages .viewicon {
+.pages s .viewicon {
   display: none;
 }
 

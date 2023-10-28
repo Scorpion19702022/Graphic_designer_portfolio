@@ -14,8 +14,6 @@ const bigSwipers = document.querySelectorAll('.pages__swiper')
 const bigImgSwiper = document.querySelectorAll('.pages__side--img')
 const viewIcon = document.querySelectorAll('.pages__icons')
 
-console.log(bigImgSwiper)
-
 body.onload = () => {
 	loadIcons()
 }

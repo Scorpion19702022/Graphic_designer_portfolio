@@ -271,11 +271,12 @@ body {
 
 	.highslider {
 		position: absolute;
-		width: 80vw;
-		height: 95vh;
+		width: 85vw;
+		height: 100vh;
 		object-fit: cover;
 		top: 50vh;
-		left: 10vw;
+		left: 5vw;
+		right: 5vw;
 		transform: translateY(-25%);
 		z-index: 1000;
 		cursor: pointer;
@@ -283,11 +284,11 @@ body {
 
 	.imgBig {
 		width: 65vh;
-		height: 55vh;
+		height: 58vh;
 		// object-fit: cover;
 		cursor: pointer;
 	}
-	.viewicon {
+	s .viewicon {
 		display: none;
 	}
 }
