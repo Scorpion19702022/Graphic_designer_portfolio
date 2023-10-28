@@ -421,6 +421,12 @@ body {
   z-index: 1000;
   cursor: pointer;
 }
+.pages .imgBig {
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+}
 
 @media (min-width: 768px) {
   .header {

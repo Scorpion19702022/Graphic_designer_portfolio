@@ -7,8 +7,10 @@ const body = document.querySelector('body')
 
 const highImg = document.querySelectorAll('.all-img')
 
-// const highSlider = document.querySelectorAll('.pages__side--img')
-const bigSwipers = document.querySelectorAll('.pages__swiper')
+const bigSwipers = document.querySelectorAll('.pages__side--img')
+const bigImgSwiper = document.querySelectorAll('.pages__swiper')
+
+console.log(bigImgSwiper)
 
 body.onload = () => {
 	loadIcons()
@@ -35,6 +37,15 @@ const handleClickSlider = () => {
 	bigSwipers.forEach(e => {
 		e.addEventListener('click', () => {
 			e.classList.toggle('highslider')
+			if (e.classList.contains('highslider')) {
+				bigImgSwiper.forEach(img => {
+					img.classList.add('imgBig')
+				})
+			} else {
+				bigImgSwiper.forEach(img => {
+					img.classList.remove('imgBig')
+				})
+			}
 		})
 	})
 }

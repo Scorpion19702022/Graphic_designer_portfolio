@@ -282,6 +282,12 @@ body {
 		z-index: 1000;
 		cursor: pointer;
 	}
+
+	.imgBig {
+		height: 100vh;
+		object-fit: cover;
+		cursor: pointer;
+	}
 }
 
 // ==============================================
