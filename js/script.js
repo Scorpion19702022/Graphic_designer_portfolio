@@ -8,14 +8,14 @@ const body = document.querySelector('body')
 const highImg = document.querySelectorAll('.all-img')
 
 const viewTextFront = document.querySelector('.textfront')
-const bigSwipersFront = document.querySelectorAll('.swiperfront')
+const bigSwipersFront = document.querySelector('.swiperfront')
 const pagesWrapperFront = document.querySelector('.wrapperfront')
 const bigImgSwiperFront = document.querySelectorAll('.imgfront')
 const viewIconFront = document.querySelectorAll('.iconsfront')
 
 const viewTextSides = document.querySelector('.textsides')
 const bigSwipersSides = document.querySelectorAll('.swipersides')
-const pagesWrapperSides = document.querySelectorAll('.wrappersides')
+const pagesWrapperSides = document.querySelector('.wrappersides')
 const bigImgSwiperSides = document.querySelectorAll('.imgsides')
 const viewIconSides = document.querySelectorAll('.iconssides')
 
@@ -54,54 +54,50 @@ const handleBtn = () => {
 
 const handleClickSliderFront = () => {
 	pagesWrapperFront.addEventListener('click', () => {
-		bigSwipersFront.forEach(slider => {
-			slider.classList.toggle('highslider')
-			if (slider.classList.contains('highslider')) {
-				bigImgSwiperFront.forEach(img => {
-					img.classList.add('imgBig')
-				})
-				viewIconFront.forEach(icon => {
-					icon.classList.add('viewicon')
-				})
-				viewTextFront.classList.add('viewicon')
-			} else {
-				bigImgSwiperFront.forEach(img => {
-					img.classList.remove('imgBig')
-				})
-				viewIconFront.forEach(icon => {
-					icon.classList.remove('viewicon')
-				})
-				viewTextFront.classList.remove('viewicon')
-			}
-		})
+		bigSwipersFront.classList.toggle('highslider')
+		if (bigSwipersFront.classList.contains('highslider')) {
+			bigImgSwiperFront.forEach(img => {
+				img.classList.add('imgBig')
+			})
+			viewIconFront.forEach(icon => {
+				icon.classList.add('viewicon')
+			})
+			viewTextFront.classList.add('viewicon')
+		} else {
+			bigImgSwiperFront.forEach(img => {
+				img.classList.remove('imgBig')
+			})
+			viewIconFront.forEach(icon => {
+				icon.classList.remove('viewicon')
+			})
+			viewTextFront.classList.remove('viewicon')
+		}
 	})
 }
 
 handleClickSliderFront()
 
 const handleClickSliderSides = () => {
-	pagesWrapperCommerSides.forEach(e => {
-		e.addEventListener('click', () => {
-			bigSwipersCommerSides.forEach(slider => {
-				slider.classList.toggle('highslider')
-				if (slider.classList.contains('highslider')) {
-					bigImgSwiperCommerSides.forEach(img => {
-						img.classList.add('imgBig')
-					})
-					viewIconCommerSides.forEach(icon => {
-						icon.classList.add('viewicon')
-					})
-					viewTextCommerSides.classList.add('viewicon')
-				} else {
-					bigImgSwiperCommerSides.forEach(img => {
-						img.classList.remove('imgBig')
-					})
-					viewIconCommerSides.forEach(icon => {
-						icon.classList.remove('viewicon')
-					})
-					viewTextCommerSides.classList.remove('viewicon')
-				}
-			})
+	pagesWrapperSides.addEventListener('click', () => {
+		bigSwipersSides.forEach(slider => {
+			slider.classList.toggle('highslider')
+			if (slider.classList.contains('highslider')) {
+				bigImgSwiperSides.forEach(img => {
+					img.classList.add('imgBig')
+				})
+				viewIconSides.forEach(icon => {
+					icon.classList.add('viewicon')
+				})
+				viewTextSides.classList.add('viewicon')
+			} else {
+				bigImgSwiperSides.forEach(img => {
+					img.classList.remove('imgBig')
+				})
+				viewIconSides.forEach(icon => {
+					icon.classList.remove('viewicon')
+				})
+				viewTextSides.classList.remove('viewicon')
+			}
 		})
 	})
 }
@@ -138,26 +134,26 @@ const handleClickSliderMotoSides = () => {
 handleClickSliderMotoSides()
 
 const handleClickSliderCommerSides = () => {
-	pagesWrapperSides.forEach(e => {
+	pagesWrapperCommerSides.forEach(e => {
 		e.addEventListener('click', () => {
-			bigSwipersSides.forEach(slider => {
+			bigSwipersCommerSides.forEach(slider => {
 				slider.classList.toggle('highslider')
 				if (slider.classList.contains('highslider')) {
-					bigImgSwiperSides.forEach(img => {
+					bigImgSwiperCommerSides.forEach(img => {
 						img.classList.add('imgBig')
 					})
-					viewIconSides.forEach(icon => {
+					viewIconCommerSides.forEach(icon => {
 						icon.classList.add('viewicon')
 					})
-					viewTextSides.classList.add('viewicon')
+					viewTextCommerSides.classList.add('viewicon')
 				} else {
-					bigImgSwiperSides.forEach(img => {
+					bigImgSwiperCommerSides.forEach(img => {
 						img.classList.remove('imgBig')
 					})
-					viewIconSides.forEach(icon => {
+					viewIconCommerSides.forEach(icon => {
 						icon.classList.remove('viewicon')
 					})
-					viewTextSides.classList.remove('viewicon')
+					viewTextCommerSides.classList.remove('viewicon')
 				}
 			})
 		})
