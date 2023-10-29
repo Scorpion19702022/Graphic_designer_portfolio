@@ -9,7 +9,7 @@ const highImg = document.querySelectorAll('.all-img')
 
 const viewTextFront = document.querySelector('.textfront')
 const bigSwipersFront = document.querySelectorAll('.swiperfront')
-const pagesWrapperFront = document.querySelectorAll('.wrapperfront')
+const pagesWrapperFront = document.querySelector('.wrapperfront')
 const bigImgSwiperFront = document.querySelectorAll('.imgfront')
 const viewIconFront = document.querySelectorAll('.iconsfront')
 
@@ -53,28 +53,26 @@ const handleBtn = () => {
 }
 
 const handleClickSliderFront = () => {
-	pagesWrapperFront.forEach(e => {
-		e.addEventListener('click', () => {
-			bigSwipersFront.forEach(slider => {
-				slider.classList.toggle('highslider')
-				if (slider.classList.contains('highslider')) {
-					bigImgSwiperFront.forEach(img => {
-						img.classList.add('imgBig')
-					})
-					viewIconFront.forEach(icon => {
-						icon.classList.add('viewicon')
-					})
-					viewTextFront.classList.add('viewicon')
-				} else {
-					bigImgSwiperFront.forEach(img => {
-						img.classList.remove('imgBig')
-					})
-					viewIconFront.forEach(icon => {
-						icon.classList.remove('viewicon')
-					})
-					viewTextFront.classList.remove('viewicon')
-				}
-			})
+	pagesWrapperFront.addEventListener('click', () => {
+		bigSwipersFront.forEach(slider => {
+			slider.classList.toggle('highslider')
+			if (slider.classList.contains('highslider')) {
+				bigImgSwiperFront.forEach(img => {
+					img.classList.add('imgBig')
+				})
+				viewIconFront.forEach(icon => {
+					icon.classList.add('viewicon')
+				})
+				viewTextFront.classList.add('viewicon')
+			} else {
+				bigImgSwiperFront.forEach(img => {
+					img.classList.remove('imgBig')
+				})
+				viewIconFront.forEach(icon => {
+					icon.classList.remove('viewicon')
+				})
+				viewTextFront.classList.remove('viewicon')
+			}
 		})
 	})
 }
