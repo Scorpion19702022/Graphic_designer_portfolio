@@ -13,11 +13,17 @@ const pagesWrapperFront = document.querySelectorAll('.wrapperfront')
 const bigImgSwiperFront = document.querySelectorAll('.imgfront')
 const viewIconFront = document.querySelectorAll('.iconsfront')
 
-const viewTextSites = document.querySelector('.textsites')
-const bigSwipersSites = document.querySelectorAll('.swipersites')
-const pagesWrapperSites = document.querySelectorAll('.wrappersites')
-const bigImgSwiperSites = document.querySelectorAll('.imgsites')
-const viewIconSites = document.querySelectorAll('.iconssites')
+const viewTextSides = document.querySelector('.textsides')
+const bigSwipersSides = document.querySelectorAll('.swipersides')
+const pagesWrapperSides = document.querySelectorAll('.wrappersides')
+const bigImgSwiperSides = document.querySelectorAll('.imgsides')
+const viewIconSides = document.querySelectorAll('.iconssides')
+
+const viewTextMotoSides = document.querySelector('.textmotosides')
+const bigSwipersMotoSides = document.querySelectorAll('.swipermotosides')
+const pagesWrapperMotoSides = document.querySelectorAll('.wrappermotosides')
+const bigImgSwiperMotoSides = document.querySelectorAll('.imgmotosides')
+const viewIconMotoSides = document.querySelectorAll('.iconsmotosides')
 
 body.onload = () => {
 	loadIcons()
@@ -69,34 +75,63 @@ const handleClickSliderFront = () => {
 
 handleClickSliderFront()
 
-const handleClickSliderSites = () => {
-	pagesWrapperSites.forEach(e => {
+const handleClickSliderSides = () => {
+	pagesWrapperMotoSides.forEach(e => {
 		e.addEventListener('click', () => {
-			bigSwipersSites.forEach(slider => {
+			bigSwipersMotoSides.forEach(slider => {
 				slider.classList.toggle('highslider')
 				if (slider.classList.contains('highslider')) {
-					bigImgSwiperSites.forEach(img => {
+					bigImgSwiperMotoSides.forEach(img => {
 						img.classList.add('imgBig')
 					})
-					viewIconSites.forEach(icon => {
+					viewIconMotoSides.forEach(icon => {
 						icon.classList.add('viewicon')
 					})
-					viewTextSites.classList.add('viewicon')
+					viewTextMotoSides.classList.add('viewicon')
 				} else {
-					bigImgSwiperSites.forEach(img => {
+					bigImgSwiperMotoSides.forEach(img => {
 						img.classList.remove('imgBig')
 					})
-					viewIconSites.forEach(icon => {
+					viewIconMotoSides.forEach(icon => {
 						icon.classList.remove('viewicon')
 					})
-					viewTextSites.classList.remove('viewicon')
+					viewTextMotoSides.classList.remove('viewicon')
 				}
 			})
 		})
 	})
 }
 
-handleClickSliderSites()
+handleClickSliderSides()
+
+const handleClickSliderMotoSides = () => {
+	pagesWrapperSides.forEach(e => {
+		e.addEventListener('click', () => {
+			bigSwipersSides.forEach(slider => {
+				slider.classList.toggle('highslider')
+				if (slider.classList.contains('highslider')) {
+					bigImgSwiperSides.forEach(img => {
+						img.classList.add('imgBig')
+					})
+					viewIconSides.forEach(icon => {
+						icon.classList.add('viewicon')
+					})
+					viewTextSides.classList.add('viewicon')
+				} else {
+					bigImgSwiperSides.forEach(img => {
+						img.classList.remove('imgBig')
+					})
+					viewIconSides.forEach(icon => {
+						icon.classList.remove('viewicon')
+					})
+					viewTextSides.classList.remove('viewicon')
+				}
+			})
+		})
+	})
+}
+
+handleClickSliderMotoSides()
 
 const handleClickImage = () => {
 	highImg.forEach((e, index) => {
