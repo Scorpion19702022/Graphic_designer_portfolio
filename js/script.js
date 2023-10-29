@@ -10,11 +10,11 @@ const highImg = document.querySelectorAll('.all-img')
 // const bigImgSwiper = document.querySelectorAll('.pages__swiper')
 // const bigSwipers = document.querySelectorAll('.pages__side--img')
 
-const viewText = document.querySelectorAll('.pages__text')
-const bigSwipers = document.querySelectorAll('.pages__swiper')
-const bigImgSwiper = document.querySelectorAll('.pages__side--img')
-const viewIcon = document.querySelectorAll('.pages__icons')
-const pagesWrapper = document.querySelectorAll('.pages__wrapper')
+const viewTextFront = document.querySelectorAll('.textfront')
+const bigSwipersFront = document.querySelectorAll('.swiperfront')
+const bigImgSwiperFront = document.querySelectorAll('.imgfront')
+const viewIconFront = document.querySelectorAll('.iconsfront')
+const pagesWrapperFront = document.querySelectorAll('.wrapperfront')
 
 body.onload = () => {
 	loadIcons()
@@ -37,29 +37,29 @@ const handleBtn = () => {
 	})
 }
 
-const handleClickSlider = () => {
-	pagesWrapper.forEach(e => {
+const handleClickSliderFront = () => {
+	pagesWrapperFront.forEach(e => {
 		e.addEventListener('click', () => {
-			bigSwipers.forEach(slider => {
+			bigSwipersFront.forEach(slider => {
 				slider.classList.toggle('highslider')
 				if (slider.classList.contains('highslider')) {
-					bigImgSwiper.forEach(img => {
+					bigImgSwiperFront.forEach(img => {
 						img.classList.add('imgBig')
 					})
-					viewIcon.forEach(icon => {
+					viewIconFront.forEach(icon => {
 						icon.classList.add('viewicon')
 					})
-					viewText.forEach(text => {
+					viewTextFront.forEach(text => {
 						text.classList.add('viewicon')
 					})
 				} else {
-					bigImgSwiper.forEach(img => {
+					bigImgSwiperFront.forEach(img => {
 						img.classList.remove('imgBig')
 					})
-					viewIcon.forEach(icon => {
+					viewIconFront.forEach(icon => {
 						icon.classList.remove('viewicon')
 					})
-					viewText.forEach(text => {
+					viewTextFront.forEach(text => {
 						text.classList.remove('viewicon')
 					})
 				}
@@ -68,7 +68,7 @@ const handleClickSlider = () => {
 	})
 }
 
-handleClickSlider()
+handleClickSliderFront()
 
 const handleClickImage = () => {
 	highImg.forEach((e, index) => {
