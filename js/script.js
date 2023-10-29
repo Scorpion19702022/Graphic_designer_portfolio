@@ -7,10 +7,7 @@ const body = document.querySelector('body')
 
 const highImg = document.querySelectorAll('.all-img')
 
-// const bigImgSwiper = document.querySelectorAll('.pages__swiper')
-// const bigSwipers = document.querySelectorAll('.pages__side--img')
-
-const viewTextFront = document.querySelectorAll('.textfront')
+const viewTextFront = document.querySelector('.textfront')
 const bigSwipersFront = document.querySelectorAll('.swiperfront')
 const bigImgSwiperFront = document.querySelectorAll('.imgfront')
 const viewIconFront = document.querySelectorAll('.iconsfront')
@@ -49,9 +46,7 @@ const handleClickSliderFront = () => {
 					viewIconFront.forEach(icon => {
 						icon.classList.add('viewicon')
 					})
-					viewTextFront.forEach(text => {
-						text.classList.add('viewicon')
-					})
+					viewTextFront.classList.add('viewicon')
 				} else {
 					bigImgSwiperFront.forEach(img => {
 						img.classList.remove('imgBig')
@@ -59,9 +54,7 @@ const handleClickSliderFront = () => {
 					viewIconFront.forEach(icon => {
 						icon.classList.remove('viewicon')
 					})
-					viewTextFront.forEach(text => {
-						text.classList.remove('viewicon')
-					})
+					viewTextFront.classList.remove('viewicon')
 				}
 			})
 		})
