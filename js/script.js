@@ -25,6 +25,12 @@ const pagesWrapperMotoSides = document.querySelectorAll('.wrappermotosides')
 const bigImgSwiperMotoSides = document.querySelectorAll('.imgmotosides')
 const viewIconMotoSides = document.querySelectorAll('.iconsmotosides')
 
+const viewTextCommerSides = document.querySelector('.textcommersides')
+const bigSwipersCommerSides = document.querySelectorAll('.swipercommersides')
+const pagesWrapperCommerSides = document.querySelectorAll('.wrappercommersides')
+const bigImgSwiperCommerSides = document.querySelectorAll('.imgcommersides')
+const viewIconCommerSides = document.querySelectorAll('.iconscommersides')
+
 body.onload = () => {
 	loadIcons()
 }
@@ -76,6 +82,35 @@ const handleClickSliderFront = () => {
 handleClickSliderFront()
 
 const handleClickSliderSides = () => {
+	pagesWrapperCommerSides.forEach(e => {
+		e.addEventListener('click', () => {
+			bigSwipersCommerSides.forEach(slider => {
+				slider.classList.toggle('highslider')
+				if (slider.classList.contains('highslider')) {
+					bigImgSwiperCommerSides.forEach(img => {
+						img.classList.add('imgBig')
+					})
+					viewIconCommerSides.forEach(icon => {
+						icon.classList.add('viewicon')
+					})
+					viewTextCommerSides.classList.add('viewicon')
+				} else {
+					bigImgSwiperCommerSides.forEach(img => {
+						img.classList.remove('imgBig')
+					})
+					viewIconCommerSides.forEach(icon => {
+						icon.classList.remove('viewicon')
+					})
+					viewTextCommerSides.classList.remove('viewicon')
+				}
+			})
+		})
+	})
+}
+
+handleClickSliderSides()
+
+const handleClickSliderMotoSides = () => {
 	pagesWrapperMotoSides.forEach(e => {
 		e.addEventListener('click', () => {
 			bigSwipersMotoSides.forEach(slider => {
@@ -102,9 +137,9 @@ const handleClickSliderSides = () => {
 	})
 }
 
-handleClickSliderSides()
+handleClickSliderMotoSides()
 
-const handleClickSliderMotoSides = () => {
+const handleClickSliderCommerSides = () => {
 	pagesWrapperSides.forEach(e => {
 		e.addEventListener('click', () => {
 			bigSwipersSides.forEach(slider => {
@@ -131,7 +166,7 @@ const handleClickSliderMotoSides = () => {
 	})
 }
 
-handleClickSliderMotoSides()
+handleClickSliderCommerSides()
 
 const handleClickImage = () => {
 	highImg.forEach((e, index) => {
