@@ -9,9 +9,15 @@ const highImg = document.querySelectorAll('.all-img')
 
 const viewTextFront = document.querySelector('.textfront')
 const bigSwipersFront = document.querySelectorAll('.swiperfront')
+const pagesWrapperFront = document.querySelectorAll('.wrapperfront')
 const bigImgSwiperFront = document.querySelectorAll('.imgfront')
 const viewIconFront = document.querySelectorAll('.iconsfront')
-const pagesWrapperFront = document.querySelectorAll('.wrapperfront')
+
+const viewTextSites = document.querySelector('.textsites')
+const bigSwipersSites = document.querySelectorAll('.swipersites')
+const pagesWrapperSites = document.querySelectorAll('.wrappersites')
+const bigImgSwiperSites = document.querySelectorAll('.imgsites')
+const viewIconSites = document.querySelectorAll('.iconssites')
 
 body.onload = () => {
 	loadIcons()
@@ -62,6 +68,35 @@ const handleClickSliderFront = () => {
 }
 
 handleClickSliderFront()
+
+const handleClickSliderSites = () => {
+	pagesWrapperSites.forEach(e => {
+		e.addEventListener('click', () => {
+			bigSwipersSites.forEach(slider => {
+				slider.classList.toggle('highslider')
+				if (slider.classList.contains('highslider')) {
+					bigImgSwiperSites.forEach(img => {
+						img.classList.add('imgBig')
+					})
+					viewIconSites.forEach(icon => {
+						icon.classList.add('viewicon')
+					})
+					viewTextSites.classList.add('viewicon')
+				} else {
+					bigImgSwiperSites.forEach(img => {
+						img.classList.remove('imgBig')
+					})
+					viewIconSites.forEach(icon => {
+						icon.classList.remove('viewicon')
+					})
+					viewTextSites.classList.remove('viewicon')
+				}
+			})
+		})
+	})
+}
+
+handleClickSliderSites()
 
 const handleClickImage = () => {
 	highImg.forEach((e, index) => {
