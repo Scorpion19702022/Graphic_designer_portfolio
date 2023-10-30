@@ -475,20 +475,18 @@ body {
   }
   .pages .highslider {
     position: absolute;
-    width: 100vw;
+    width: 90vw;
     height: 100vh;
     -o-object-fit: cover;
        object-fit: cover;
-    top: 37vh;
-    bottom: 37vh;
+    top: 10vh;
+    bottom: 10vh;
     left: 2vw;
     right: 2vw;
   }
   .pages .imgBig {
-    max-width: 65vw;
+    min-width: 52vw;
     height: 78vh;
-    -o-object-fit: cover;
-       object-fit: cover;
     cursor: pointer;
   }
 }
@@ -545,6 +543,13 @@ body {
     height: 70vh;
     top: 20vh;
     left: 3vw;
+  }
+  .pages .highslider {
+    top: 15vh;
+  }
+  .pages .imgBig {
+    min-width: 40vw;
+    height: 72vh;
   }
 }
 @media (min-width: 1400px) {

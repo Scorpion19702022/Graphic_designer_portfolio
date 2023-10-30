@@ -173,7 +173,7 @@ handleClickImage()
 
 const swiper = new Swiper('.mySwiperOne, .mySwiperTwo, .mySwiperThree, .mySwiperFour', {
 	slidesPerView: 1,
-	spaceBetween: 40,
+	spaceBetween: 35,
 	loop: true,
 	autoplay: {
 		delay: 3000,
