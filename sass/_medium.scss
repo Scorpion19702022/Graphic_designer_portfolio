@@ -53,7 +53,7 @@
 		}
 		.highslider {
 			position: absolute;
-			width: 95vw;
+			width: 100vw;
 			height: 100vh;
 			object-fit: cover;
 			top: 37vh;
@@ -63,9 +63,9 @@
 		}
 
 		.imgBig {
-			width: 65vh;
+			max-width: 65vw;
 			height: 78vh;
-			// object-fit: cover;
+			object-fit: cover;
 			cursor: pointer;
 		}
 	}

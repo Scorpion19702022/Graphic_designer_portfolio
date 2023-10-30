@@ -274,16 +274,17 @@ body {
 		width: 85vw;
 		height: 100vh;
 		object-fit: cover;
-		top: 50vh;
+		top: 25vh;
 		left: 5vw;
 		right: 5vw;
-		transform: translateY(-25%);
+		bottom: 25vh;
+		// transform: translateY(-25%);
 		z-index: 1000;
 		cursor: pointer;
 	}
 
 	.imgBig {
-		width: 65vh;
+		min-width: 45vh;
 		height: 58vh;
 		// object-fit: cover;
 		cursor: pointer;
