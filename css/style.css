@@ -662,4 +662,11 @@ body {
     top: 3vh;
     left: 4.2vw;
   }
+  .pages .highslider {
+    top: 20vh;
+  }
+  .pages .imgBig {
+    min-width: 20vw;
+    height: 70vh;
+  }
 }/*# sourceMappingURL=style.css.map */
