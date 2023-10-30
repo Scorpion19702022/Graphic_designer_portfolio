@@ -508,6 +508,13 @@ body {
   .pages__swiper {
     width: 60vw;
   }
+  .pages__dtp {
+    height: 50vh;
+    width: 90vw;
+  }
+  .pages__imagedtp {
+    height: 19vh;
+  }
   .pages .action {
     width: 93vw;
     height: 47vh;
@@ -579,6 +586,14 @@ body {
   }
   .pages__swiper {
     width: 80vw;
+  }
+  .pages__dtp {
+    height: 54vh;
+    width: 80vw;
+    margin: 0 auto;
+  }
+  .pages__imagedtp {
+    height: 24vh;
   }
   .pages .action {
     width: 93vw;
