@@ -690,7 +690,7 @@ body {
   .pages__side--img {
     height: 55vh;
   }
-  .pages__dtp {
+  .pages__dtp, .pages__www {
     height: 63vh;
     width: 48vw;
   }

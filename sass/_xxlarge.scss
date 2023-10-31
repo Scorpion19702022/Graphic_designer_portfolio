@@ -37,10 +37,12 @@
 			}
 		}
 
-		&__dtp {
+		&__dtp,
+		&__www {
 			height: 63vh;
 			width: 48vw;
 		}
+
 		&__imagedtp {
 			height: 23vh;
 			object-fit: cover;
