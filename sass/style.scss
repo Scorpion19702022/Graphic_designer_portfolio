@@ -63,13 +63,13 @@ body {
 				&::before {
 					position: absolute;
 					content: '';
-					width: 0vw;
+					width: 0%;
 					bottom: 0;
 					border-bottom: 0.04em solid var(--color-extramedium);
 					transition: all 0.3s ease-in-out;
 				}
 				&:hover::before {
-					width: 25vw;
+					width: 100%;
 				}
 				&:hover {
 					color: var(--color-extramedium);

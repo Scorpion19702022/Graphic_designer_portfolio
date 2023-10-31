@@ -168,14 +168,14 @@ body {
 .nav .navbar__link--page::before {
   position: absolute;
   content: "";
-  width: 0vw;
+  width: 0%;
   bottom: 0;
   border-bottom: 0.04em solid var(--color-extramedium);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 .nav .navbar__link--page:hover::before {
-  width: 25vw;
+  width: 100%;
 }
 .nav .navbar__link--page:hover {
   color: var(--color-extramedium);
