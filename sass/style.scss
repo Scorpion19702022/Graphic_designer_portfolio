@@ -16,6 +16,7 @@
 	--color-medium: #00008b;
 	--color-extradark: #000061;
 	--color-dark: #000037;
+	--color-link: #fdef19;
 	--color-blenda: rgba(0, 0, 55, 0.3);
 }
 
@@ -206,9 +207,15 @@ body {
 		z-index: 10;
 	}
 	&__text {
+		display: flex;
+		flex-direction: column;
 		&--text {
 			font-size: 0.92em;
 			color: var(--color-extralight);
+			a {
+				text-decoration: none;
+				color: var(--color-link);
+			}
 		}
 	}
 	&__swiper {
@@ -231,7 +238,8 @@ body {
 	&__icons {
 		color: var(--color-light);
 	}
-	&__dtp {
+	&__dtp,
+	&__www {
 		height: 40vh;
 		width: 90vw;
 		margin-top: 2em;
@@ -240,7 +248,8 @@ body {
 		grid-template-rows: repeat(2, 1fr);
 		gap: 2px;
 	}
-	&__imgdtp1 {
+	&__imgdtp1,
+	&__www1 {
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -248,7 +257,8 @@ body {
 		grid-row: 1/2;
 		cursor: pointer;
 	}
-	&__imgdtp2 {
+	&__imgdtp2,
+	&__www2 {
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -256,7 +266,8 @@ body {
 		grid-row: 1/2;
 		cursor: pointer;
 	}
-	&__imgdtp3 {
+	&__imgdtp3,
+	&__www3 {
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -264,7 +275,8 @@ body {
 		grid-row: 2/3;
 		cursor: pointer;
 	}
-	&__imgdtp4 {
+	&__imgdtp4,
+	&__www4 {
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -272,9 +284,15 @@ body {
 		grid-row: 2/3;
 		cursor: pointer;
 	}
+
 	&__imagedtp {
 		height: 12.4vh;
 		object-fit: cover;
+	}
+
+	&__pagewww {
+		height: 11.8vh;
+		border: 0.04em solid var(--color-light);
 	}
 
 	.action {
