@@ -533,6 +533,9 @@ body {
   .pages__imagedtp {
     height: 19vh;
   }
+  .pages__pagewww {
+    height: 17vh;
+  }
   .pages .action {
     width: 93vw;
     height: 47vh;
@@ -610,8 +613,16 @@ body {
     width: 80vw;
     margin: 0 auto;
   }
+  .pages__www {
+    width: 76vw;
+    height: 55vh;
+    margin: 0 auto;
+  }
   .pages__imagedtp {
     height: 24vh;
+  }
+  .pages__pagewww {
+    height: 22vh;
   }
   .pages .action {
     width: 93vw;
