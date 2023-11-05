@@ -328,6 +328,14 @@ body {
 	.viewicon {
 		display: none;
 	}
+
+	&__box-contact {
+		height: 40vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+
 	&__list {
 		&--contact {
 			color: var(--color-extralight);
@@ -342,7 +350,7 @@ body {
 	&__social {
 		z-index: 1;
 		&--heading {
-			font-size: 1.2em;
+			font-size: 1em;
 			color: var(--color-extralight);
 		}
 	}
@@ -356,8 +364,15 @@ body {
 		display: flex;
 		justify-content: space-around;
 		&--social {
-			font-size: 2em;
+			font-size: 2.6em;
 			list-style-type: none;
+			i {
+				color: var(--color-light);
+				transition: color 0.2s ease-in-out;
+				&:hover {
+					color: var(--color-extramedium);
+				}
+			}
 		}
 	}
 }
