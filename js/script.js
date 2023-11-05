@@ -31,6 +31,8 @@ const pagesWrapperCommerSides = document.querySelector('.wrappercommersides')
 const bigImgSwiperCommerSides = document.querySelectorAll('.imgcommersides')
 const viewIconCommerSides = document.querySelectorAll('.iconscommersides')
 
+const spanInFooter = document.querySelector('.year')
+
 body.onload = () => {
 	loadIcons()
 }
@@ -202,5 +204,13 @@ const swiper = new Swiper('.mySwiperOne, .mySwiperTwo, .mySwiperThree, .mySwiper
 		},
 	},
 })
+
+const currentYear = new Date().getFullYear()
+
+const yearFooter = () => {
+	spanInFooter.innerHTML = currentYear
+}
+
+yearFooter()
 
 btn.addEventListener('click', handleBtn)
