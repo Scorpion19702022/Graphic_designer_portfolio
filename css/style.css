@@ -620,6 +620,9 @@ body {
     height: 78vh;
     cursor: pointer;
   }
+  .pages__list--contact {
+    font-size: 1.4em;
+  }
 }
 @media (min-width: 1200px) {
   .header {
@@ -697,6 +700,12 @@ body {
   .pages .imgBig {
     min-width: 40vw;
     height: 72vh;
+  }
+  .pages__social--heading {
+    font-size: 1.8em;
+  }
+  .pages__social-list--social {
+    font-size: 3.2em;
   }
 }
 @media (min-width: 1400px) {

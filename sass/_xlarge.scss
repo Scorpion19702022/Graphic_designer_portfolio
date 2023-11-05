@@ -66,5 +66,16 @@
 			min-width: 40vw;
 			height: 72vh;
 		}
+
+		&__social {
+			&--heading {
+				font-size: 1.8em;
+			}
+		}
+		&__social-list {
+			&--social {
+				font-size: 3.2em;
+			}
+		}
 	}
 }

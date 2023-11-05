@@ -80,5 +80,10 @@
 			// object-fit: cover;
 			cursor: pointer;
 		}
+		&__list {
+			&--contact {
+				font-size: 1.4em;
+			}
+		}
 	}
 }
