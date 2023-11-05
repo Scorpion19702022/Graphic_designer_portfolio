@@ -328,6 +328,37 @@ body {
 	.viewicon {
 		display: none;
 	}
+	&__list {
+		&--contact {
+			color: var(--color-extralight);
+			margin: 1em 0;
+			list-style-type: none;
+			i {
+				color: var(--color-light);
+				margin-right: 0.6em;
+			}
+		}
+	}
+	&__social {
+		&--heading {
+			font-size: 1.2em;
+			color: var(--color-extralight);
+		}
+	}
+	&__social-icon {
+		margin-top: 1em;
+		display: flex;
+		justify-content: center;
+	}
+	&__social-list {
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+		&--social {
+			font-size: 2em;
+			list-style-type: none;
+		}
+	}
 }
 
 // ==============================================

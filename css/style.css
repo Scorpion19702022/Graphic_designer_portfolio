@@ -492,6 +492,40 @@ body {
 .pages .viewicon {
   display: none;
 }
+.pages__list--contact {
+  color: var(--color-extralight);
+  margin: 1em 0;
+  list-style-type: none;
+}
+.pages__list--contact i {
+  color: var(--color-light);
+  margin-right: 0.6em;
+}
+.pages__social--heading {
+  font-size: 1.2em;
+  color: var(--color-extralight);
+}
+.pages__social-icon {
+  margin-top: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.pages__social-list {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.pages__social-list--social {
+  font-size: 2em;
+  list-style-type: none;
+}
 
 @media (min-width: 768px) {
   .header {
