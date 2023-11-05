@@ -501,6 +501,9 @@ body {
   color: var(--color-light);
   margin-right: 0.6em;
 }
+.pages__social {
+  z-index: 1;
+}
 .pages__social--heading {
   font-size: 1.2em;
   color: var(--color-extralight);
