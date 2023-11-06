@@ -27,9 +27,9 @@ The project presents my portfolio summarizing many years of work as a computer g
 ---
 
 <p align="center" display="flex">
-<img src="./img/small/small_OKL_TM_04.jpg" alt="screenshot">
-<img src="./img/small/small_OKL_PILOT_02.jpg" alt="screenshot">
-<img src="./img/small/small_PILOT_STR_005.jpg" alt="screenshot">
-<img src="./img/small/small_TM_STR_001.jpg" alt="screenshot">
-<img src="./img/small/small_TP_STR_001.jpg" alt="screenshot">
+<img src="./img/small/small_OKL_TM_04.jpg" alt="screenshot" wight="20%">
+<img src="./img/small/small_OKL_PILOT_02.jpg" alt="screenshot" wight="20%">
+<img src="./img/small/small_PILOT_STR_005.jpg" alt="screenshot" wight="20%">
+<img src="./img/small/small_TM_STR_001.jpg" alt="screenshot" wight="20%">
+<img src="./img/small/small_TP_STR_001.jpg" alt="screenshot" wight="20%">
 </p>
