@@ -10,7 +10,7 @@ The project presents my portfolio summarizing many years of work as a computer g
 
 ### Graphics skills:
 
-<p align="center" display=""flex>
+<p align="center" display="flex" justify-content="space-between">
 <img src="./img/icons/indesign.png" alt="logo" width="5%">
 <img src="./img/icons/photoshop.png" alt="logo" width="5%">
 <img src="./img/icons/illustrator.png" alt="logo" width="5%">
@@ -21,17 +21,20 @@ The project presents my portfolio summarizing many years of work as a computer g
 
 ### Programmer skills:
 
-- HTML5
-- CSS/SASS/BEM
-- JavaScript
-- React.js
+<p align="center" display="flex" justify-content="space-between">
+<img src="./img/icons/html.png" alt="logo" width="5%">
+<img src="./img/icons/css.png" alt="logo" width="5%">
+<img src="./img/icons/sass.png" alt="logo" width="5%">
+<img src="./img/icons/js.png" alt="logo" width="5%">
+<img src="./img/icons/react.png" alt="logo" width="5%">
+</p>
 
 ---
 
-<p align="center" display="flex">
-<img src="./img/small/small_OKL_TM_04.jpg" alt="page" width="20%">
-<img src="./img/small/small_OKL_PILOT_02.jpg" alt="page" width="20%">
-<img src="./img/small/small_PILOT_STR_005.jpg" alt="page" width="20%">
-<img src="./img/small/small_TM_STR_001.jpg" alt="page" width="20%">
-<img src="./img/small/small_TP_STR_001.jpg" alt="page" width="20%">
+<p align="center" display="flex" justify-content="space-between">
+<img src="./img/small/small_OKL_TM_04.jpg" alt="page" width="17%">
+<img src="./img/small/small_OKL_PILOT_02.jpg" alt="page" width="17%">
+<img src="./img/small/small_PILOT_STR_005.jpg" alt="page" width="17%">
+<img src="./img/small/small_TM_STR_001.jpg" alt="page" width="17%">
+<img src="./img/small/small_TP_STR_001.jpg" alt="page" width="17%">
 </p>
