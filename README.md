@@ -2,6 +2,8 @@
 
 ### live:
 
+https://graphic-designer-portfolio-three.vercel.app/
+
 https://scorpion19702022.github.io/Graphic_designer_portfolio_live/
 
 The project presents my portfolio summarizing many years of work as a computer graphic designer. It is also a presentation of my skills as a front-end programmer. In the project you can find links to some of my other programming projects.
@@ -27,6 +29,7 @@ The project presents my portfolio summarizing many years of work as a computer g
 <img src="./img/icons/sass.png" alt="logo" width="5%">
 <img src="./img/icons/js.png" alt="logo" width="5%">
 <img src="./img/icons/react.png" alt="logo" width="5%">
+<img src="./img/icons/ts.png" alt="logo" width="5%">
 </p>
 
 ---
