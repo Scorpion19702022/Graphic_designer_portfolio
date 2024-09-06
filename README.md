@@ -2,7 +2,7 @@
 
 ### live:
 
-https://graphic-designer-portfolio-three.vercel.app/
+https://portfoliographicdesigner.vercel.app/
 
 https://scorpion19702022.github.io/Graphic_designer_portfolio_live/
 
